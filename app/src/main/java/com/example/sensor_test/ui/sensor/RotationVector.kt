@@ -13,7 +13,6 @@ import com.example.sensor_test.getSensor
 import com.example.sensor_test.isSensorAvailable
 import com.example.sensor_test.rememberSensorValueAsState
 import com.example.sensor_test.to4DSensorValue
-import com.example.sensor_test.ui.DataView
 import com.example.sensor_test.ui.Sensor4DDataView
 
 @Composable
@@ -31,7 +30,7 @@ fun rememberRotationVectorSensorValueAsState(
 ): State<SensorValue<List<Float>>> = rememberSensorValueAsState(
     type = Sensor.TYPE_ROTATION_VECTOR,
     samplingPeriodUs = samplingPeriodUs,
-    transformSensorEvent = { event -> event?.to4DSensorValue() ?: SensorValue.EMPTY_4D }
+    transformSensorEvent = { event -> event?.to4DSensorValue() ?: initialValue }
 )
 
 @Composable

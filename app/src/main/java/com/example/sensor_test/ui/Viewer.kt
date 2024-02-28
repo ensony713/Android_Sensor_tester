@@ -72,7 +72,6 @@ fun SensorSelectButton(
     onClick: (Type) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val basePadding = 16.dp
     val radioGroup = listOf(Type.ACCELEROMETER, Type.LINEAR_ACCELEROMETER, Type.GRAVITY,
         Type.MAGNETIC_FIELD, Type.MAGNETIC_FIELD_UNCALIBRATION, Type.ORIENTATION,
         Type.ROTATION_VECTOR, Type.GYROSCOPE)

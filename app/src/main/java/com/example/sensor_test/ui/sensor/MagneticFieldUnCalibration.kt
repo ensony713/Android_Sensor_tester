@@ -44,8 +44,6 @@ fun rememberMagneticUncalibrationValueAsState(
 fun MagneticFieldUncalibrationDataView() {
     if (isMagneticUncalibrationAvailable()) {
         val sensorValue by rememberMagneticUncalibrationValueAsState()
-        val (x, y, z) = sensorValue.value.first
-        val (xIron, yIron, zIron) = sensorValue.value.second
         Column {
             DataView(type = Type.MAGNETIC_FIELD_UNCALIBRATION, value = sensorValue.value.first)
             Line()
