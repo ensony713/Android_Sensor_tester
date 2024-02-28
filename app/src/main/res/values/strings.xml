@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">sensor_test</string>
+    <string name="accelerometer">Accelerometer Data</string>
+    <string name="gravity">Gravity Data</string>
+    <string name="gyroscope">Gyroscope Data</string>
+    <string name="linear_accelerometer">Linear Accelerometer Data</string>
+    <string name="magnetic_field">Magnetic Field Data</string>
+    <string name="orientation">Orientation Data</string>
+    <string name="rotation_vector">Rotation Vector Data</string>
+    <string name="bookmark">Is primitive data?</string>
+    <string name="rotation_matrix">Rotation Matrix</string>
+    <string name="magnetic_field_uncalibration">Magnetic Field UnCalibration</string>
+</resources>
